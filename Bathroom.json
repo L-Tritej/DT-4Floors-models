@@ -1,0 +1,30 @@
+{
+    "@id" : "dtmi:digitaltwins:core:bathroom;1",
+    "@type": "Interface",
+    "@context" : "dtmi:dtdl:context;2",
+    "displayName": "Bathroom",
+    "contents": [
+        {
+            "@type" : "Relationship",
+            "name":  "bathHasLightCapability",
+            "target" : "dtmi:digitaltwins:core:light;1"
+        },
+        {
+            "@type" : "Relationship",
+            "name" : "bathHasExhaustCapability",
+            "target" : "dtmi:digitaltwins:core:fan;1"   
+        },
+        {
+            "@type" : "Property",
+            "name" : "temperature",
+            "displayName" : "Temperature",
+            "schema" : "double"
+        },        {
+            "@type" : "Property",
+            "name" : "humidity",
+            "displayName": "Humidity",
+            "schema" : "double"
+        }
+
+    ]
+}

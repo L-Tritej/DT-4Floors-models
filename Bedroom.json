@@ -1,0 +1,47 @@
+{
+    "@id" : "dtmi:digitaltwins:core:bedroom;1",
+    "@type": "Interface",
+    "@context" : "dtmi:dtdl:context;2",
+    "displayName": "Bedroom",
+    "contents": [
+        {
+        "@type" : "Property",
+        "name" : "temperature",
+        "displayName": "Temperature",
+        "schema" : "double"
+        },
+        {
+            "@type" : "Property",
+            "name" : "humidity",
+            "displayName": "Humidity",
+            "schema" : "double"
+        }, 
+        {
+        "@type" : "Relationship",
+        "name" : "hasBathroomPart",
+        "minMultiplicity" : 0,
+        "target" : "dtmi:digitaltwins:core:bathroom;1"
+        },
+        {
+            "@type" : "Relationship",
+            "name" : "bedHasFanCapability",
+            "target": "dtmi:digitaltwins:core:fan;1"
+        },
+        {
+            "@type" : "Relationship",
+            "name" : "bedHasAcCapability",
+            "target": "dtmi:digitaltwins:core:airConditioner;1"
+        },
+
+        {
+            "@type" : "Relationship",
+            "name" : "bedHasSprinklerCapability",
+            "target": "dtmi:digitaltwins:core:sprinkler;1"
+        },
+        {
+            "@type" : "Relationship",
+            "name" : "bedHasLightCapability",
+            "target": "dtmi:digitaltwins:core:light;1"
+        }
+    ]
+}

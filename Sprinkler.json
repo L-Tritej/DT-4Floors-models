@@ -1,0 +1,21 @@
+
+{
+    "@id" : "dtmi:digitaltwins:core:sprinkler;1",
+    "@type": "Interface",
+    "@context" : "dtmi:dtdl:context;2",
+    "displayName": "Sprinkler",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "sprinklerStatus",
+            "displayName" : "SprinklerStatus",
+            "schema": "boolean"
+        },
+        {
+          "@type": "Property",
+          "name": "duration",
+          "displayName": "Duration",
+          "schema": "integer"
+        }
+    ]
+}

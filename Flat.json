@@ -1,0 +1,35 @@
+{
+    "@id" : "dtmi:digitaltwins:core:Flat;1",
+    "@type": "Interface",
+    "@context" : "dtmi:dtdl:context;2",
+    "displayName": "Flat",
+    "contents": [
+        {
+        "@type" : "Property",
+        "name" : "ownername",
+        "displayName": "Owner Name",
+        "schema" : "string"
+        },
+        {
+            "@type" : "Property",
+            "name" : "flatno",
+            "displayName": "Flat No",
+            "schema" : "Integer"
+        },  
+        {
+            "@type" : "Relationship",
+            "name" : "contains",
+            "target" : "dtmi:digitaltwins:core:Hall;1"   
+        },      
+        {
+            "@type" : "Relationship",
+            "name" : "contains",
+            "target" : "dtmi:digitaltwins:core:bedroom;1"
+        },
+        {
+            "@type" : "Relationship",
+            "name" : "contains",
+            "target" : "dtmi:digitaltwins:core:kitchen;1"
+        }
+    ]
+}

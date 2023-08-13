@@ -1,0 +1,23 @@
+{
+    "@id" :  "dtmi:digitaltwins:core:airConditioner;1",
+    "@type" : "Interface",
+    "@context" : "dtmi:dtdl:context;2",
+    "displayName": "Air Conditioner",
+    "contents": [
+        {
+            "@type": ["Property", "Power"],
+            "name" : "power",
+            "displayName" : "Power",
+            "unit": "watt",
+            "schema": "double"
+        },
+        {
+            "@type" : "Property",
+            "name" : "status",
+            "displayName" : "Status",
+            "schema" : "boolean"
+        }
+        
+        
+    ]
+}

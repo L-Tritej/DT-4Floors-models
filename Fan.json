@@ -1,0 +1,22 @@
+{
+    "@id": "dtmi:digitaltwins:core:fan;1",
+    "@type": "Interface",
+    "@context" : "dtmi:dtdl:context;2",
+    "displayName": "Fan",
+    "contents": [
+      {
+        "@type" : ["Property", "Power"],
+        "name": "power",
+        "displayName" : "Power",
+        "schema" : "double",
+        "unit": "watt"
+      },
+      {
+        "@type": "Property",
+        "name": "status",
+        "displayName": "Status",
+        "schema": "boolean"
+      }          
+    ]
+  }
+  

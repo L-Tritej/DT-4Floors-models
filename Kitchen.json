@@ -1,0 +1,46 @@
+{
+    "@id" : "dtmi:digitaltwins:core:kitchen;1",
+    "@type": "Interface",
+    "@context" : "dtmi:dtdl:context;2",
+    "displayName": "Kitchen",
+    "contents": [
+        {
+        "@type" : "Property",
+        "name" : "temperature",
+        "displayName": "Temperature",
+        "schema" : "double"
+        },
+        {
+            "@type" : "Property",
+            "name" : "humidity",
+            "displayName": "Humidity",
+            "schema" : "double"
+        }, 
+        {
+            "@type" : "Relationship",
+            "name" : "kitHasGasmeterCapability",
+            "target" : "dtmi:digitaltwins:core:gasmeter;1"   
+        },
+        {
+            "@type" : "Relationship",
+            "name" : "kitHasLightCapability",
+            "target" : "dtmi:digitaltwins:core:light;1"   
+        },
+        {
+            "@type" : "Relationship",
+            "name" : "kitHasSprinklerCapability",
+            "target" : "dtmi:digitaltwins:core:sprinkler;1"   
+        },
+        {
+            "@type" : "Relationship",
+            "name" : "kitHasExhaustCapability",
+            "target" : "dtmi:digitaltwins:core:fan;1"   
+        },
+        {
+            "@type" : "Relationship",
+            "name" : "kitHasFridgeCapability",
+            "target" : "dtmi:digitaltwins:core:fridge;1"   
+        }        
+
+    ]
+}

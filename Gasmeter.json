@@ -1,0 +1,22 @@
+{
+    "@id" : "dtmi:digitaltwins:core:gasmeter;1",
+    "@type": "Interface",
+    "@context" : "dtmi:dtdl:context;2",
+
+    "displayName": "Gas meter",
+    "contents": [
+        {
+        "@type" : ["Property","Volume"],
+        "name" : "gasmeterUsage",
+        "displayName": "Gasmeter Usage",
+        "schema" : "double",
+        "unit": "millilitre"
+        },
+        {
+            "@type" : "Property",
+            "displayName" : "Status",
+            "name" : "status",
+            "schema" : "boolean"
+        }
+    ]
+}

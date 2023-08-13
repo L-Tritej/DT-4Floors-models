@@ -1,0 +1,40 @@
+{
+    "@id" : "dtmi:digitaltwins:core:Hall;1",
+    "@type": "Interface",
+    "@context" : "dtmi:dtdl:context;2",
+    "displayName": "Hall",
+    "contents": [
+        {
+        "@type" : "Property",
+        "name" : "temperature",
+        "displayName": "Temperature",
+        "schema" : "double"
+        },
+        {
+            "@type" : "Property",
+            "name" : "humidity",
+            "displayName": "Humidity",
+            "schema" : "double"
+        },  
+        {
+            "@type" : "Relationship",
+            "name" : "hallHasTvCapability",
+            "target" : "dtmi:digitaltwins:core:tv;1"   
+        },      
+        {
+            "@type" : "Relationship",
+            "name" : "hallHasFanCapability",
+            "target" : "dtmi:digitaltwins:core:fan;1"
+        },
+        {
+            "@type" : "Relationship",
+            "name" : "hallHasLightCapability",
+            "target" : "dtmi:digitaltwins:core:light;1"
+        },
+        {
+            "@type" : "Relationship",
+            "name" : "hallHasSprinklerCapability",
+            "target" : "dtmi:digitaltwins:core:sprinkler;1"
+        }
+    ]
+}
